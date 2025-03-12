@@ -6,7 +6,7 @@ A simple _Blender_ add-on that automatically creating PDF files from Rendered im
 
 ## Installation
 
-Download a code as a ZIP archive  
+Download code as a ZIP archive  
 
 Extract and run .cmd file 
 
