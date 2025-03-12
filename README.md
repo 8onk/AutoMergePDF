@@ -2,5 +2,5 @@
 
 # AutoMergePDF
 
-A simple _Blender_ add-on that creating PDF files from Rendered images
+A simple _Blender_ add-on that automatically creating PDF files from Rendered images
 
