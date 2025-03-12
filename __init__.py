@@ -12,6 +12,7 @@ bl_info = {
 
 import bpy
 import os
+import re
 import sys
 import subprocess
 import datetime
@@ -68,7 +69,7 @@ def merge_png_to_pdf(output_pdf_path, image_folder, compression_quality):
     
     images = sorted(
         [f for f in os.listdir(image_folder) if f.endswith(".png")],
-        key=lambda x: os.path.getmtime(os.path.join(image_folder, x))
+        key=lambda x: int(re.search(r'\d{4}', x).group())  # Извлекаем последние 4 цифры и конвертируем в число
     )
     
     if not images:
